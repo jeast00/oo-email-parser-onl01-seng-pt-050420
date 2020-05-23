@@ -13,7 +13,7 @@ class EmailAddressParser
   end
 
   def parse
-    @email.collect do |email|
+    emails = @email.collect do |email|
       email.split(', ')
     end
   end
