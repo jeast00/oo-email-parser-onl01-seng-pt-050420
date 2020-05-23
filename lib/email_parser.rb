@@ -17,6 +17,7 @@ class EmailAddressParser
     single_email = emails.collect do |email|
       email.split(", ")
     end
+    single_email
   end
 
 
