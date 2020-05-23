@@ -3,6 +3,7 @@
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 require 'pry'
+require 'csv'
 
 class EmailAddressParser
 
@@ -13,7 +14,7 @@ class EmailAddressParser
   end
 
   def parse
-    @email.split(", ")
+    CSV.parse(@email)
 
   end
 
