@@ -17,7 +17,7 @@ class EmailAddressParser
       @email.split(", ")
     else
       @email.split(" ")
-    
+    end
   end
 
 
