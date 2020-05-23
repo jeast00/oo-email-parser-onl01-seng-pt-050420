@@ -14,7 +14,7 @@ class EmailAddressParser
   end
 
   def parse
-    CSV.parse(@email.join)
+    CSV.parse(@email)
 
   end
 
