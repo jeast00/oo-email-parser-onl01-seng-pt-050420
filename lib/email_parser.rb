@@ -18,6 +18,10 @@ class EmailAddressParser
     else
       @email.split(" ")
     end
+
+    if @email.match(/[,\s]/)
+
+    end
   end
 
 
