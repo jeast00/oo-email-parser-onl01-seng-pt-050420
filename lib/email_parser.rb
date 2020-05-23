@@ -18,7 +18,6 @@ class EmailAddressParser
     elsif @email.match(" ")
       @email.split(" ")
     elsif @email.match(",") && @email.match(" ")
-      binding.pry
     end
   end
 
