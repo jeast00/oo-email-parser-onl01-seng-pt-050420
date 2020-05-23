@@ -15,6 +15,7 @@ class EmailAddressParser
 
   def parse
     CSV.parse(@email)
+    binding.pry
 
   end
 
