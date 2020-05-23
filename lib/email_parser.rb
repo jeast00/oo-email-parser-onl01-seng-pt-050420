@@ -14,7 +14,6 @@ class EmailAddressParser
 
   def parse
     csv_emails = @email.split(", ")
-    space_emails = @emails.split(" ")
   end
 
 
