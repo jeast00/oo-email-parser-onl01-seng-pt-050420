@@ -16,6 +16,7 @@ class EmailAddressParser
     emails = @email.collect do |email|
       email.split(', ')
     end
+    emails
   end
 
 
