@@ -17,8 +17,8 @@ class EmailAddressParser
       @email.split(", ")
     elsif @email.match(" ")
       @email.split(" ")
-      binding.pry
     elsif @email.match(",") && @email.match(" ")
+
     end
   end
 
