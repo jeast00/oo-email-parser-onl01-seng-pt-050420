@@ -20,7 +20,7 @@ class EmailAddressParser
     elsif @email.match(", ") && @email.match(" ")
       @email.split(/[.,\s]/)
     else
-      @email.split.uniq!
+      @email.split(", ").uniq!
     end
   end
 
