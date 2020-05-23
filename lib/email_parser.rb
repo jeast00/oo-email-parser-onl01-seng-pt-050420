@@ -19,7 +19,7 @@ class EmailAddressParser
       @email.split(" ")
     end
 
-    if @email.match(/[,-\s]/)
+    if @email.match(/[,\s]/)
       binding.pry
     end
   end
