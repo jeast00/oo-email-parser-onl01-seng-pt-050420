@@ -13,7 +13,7 @@ class EmailAddressParser
   end
 
   def parse
-    @email.each do |email|
+    @email.collect do |email|
       email
     end
   end
