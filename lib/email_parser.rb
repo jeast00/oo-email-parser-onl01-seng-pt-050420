@@ -14,9 +14,9 @@ class EmailAddressParser
 
   def parse
     if @email.split(", ")
-      @email.split(", ")
+      @email.join(", ")
     else
-      @email.split(" ")
+      @email.join(" ")
     end
 
   end
