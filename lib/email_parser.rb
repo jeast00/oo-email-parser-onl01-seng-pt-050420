@@ -13,7 +13,9 @@ class EmailAddressParser
   end
 
   def parse
-    csv_emails = @email.split(", ")
+    if @email.match(", ")
+
+    end
   end
 
 
