@@ -15,13 +15,9 @@ class EmailAddressParser
   def parse
     if @email.match(", ")
       @email.split(", ")
-    elsif @email.match(" ")
-      @email.split(" ")
-    elsif @email.match(", ") && @email.match(" ")
-      @email.split(/[.,\s]/)
     else
-      @email.split(", ").uniq!
-    end
+      @email.split(" ")
+    
   end
 
 
