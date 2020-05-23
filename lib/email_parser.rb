@@ -18,7 +18,7 @@ class EmailAddressParser
     elsif @email.match(" ")
       @email.split(" ")
     elsif @email.match(",") || @email.match(" ")
-      @email.split(/[,\s]+/)
+      @email.split(/[,\s]/)
     end
   end
 
