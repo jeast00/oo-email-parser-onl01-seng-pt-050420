@@ -14,9 +14,7 @@ class EmailAddressParser
   end
 
   def parse
-    CSV.parse(@email.uniq!)
-    binding.pry
-
+    CSV.parse(@email)
   end
 
 
