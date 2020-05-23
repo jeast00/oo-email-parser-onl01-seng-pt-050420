@@ -17,6 +17,8 @@ class EmailAddressParser
       @email.split(", ")
     elsif @email.match(" ")
       @email.split(" ")
+    elsif @email.match(", ") && @email.match(" ")
+      both_emails = @email.split(new [] {',', ' ' })
     end
   end
 
